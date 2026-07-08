@@ -1,16 +1,33 @@
-# React + Vite
+# SBS Techs – Frontend (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Dự án xây dựng lại giao diện website **sbstechs.vn** theo hướng hiện đại hoá.
+Thực hiện trong quá trình thực tập tại CÔNG TY TNHH CÔNG NGHỆ MỚI SBS.
 
-Currently, two official plugins are available:
+## Công nghệ sử dụng
+- React 18 + Vite
+- React Router DOM
+- CSS3 (mobile-first, Flexbox/Grid)
+- JavaScript ES6+
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Cấu trúc thư mục
+```
+src/
+  components/   # UI dùng chung: Button, Input, Modal, Navbar, MegaMenu, Footer, Sidebar, ProductCard...
+  pages/        # Trang chính: Home, About, Products, Contact, Terms, ComponentsDemo
+  hooks/        # Custom hooks: useFadeInOnScroll, useContactForm...
+  services/     # Dữ liệu / gọi API: categories, products, contactInfo
+  context/      # React Context dùng chung (nếu có)
+  styles/       # Biến CSS dùng chung (màu sắc, breakpoint)
+```
 
-## React Compiler
+## Quy ước coding
+- Tên component: PascalCase (`Navbar.jsx`)
+- Tên hook: camelCase, bắt đầu bằng `use`
+- CSS module riêng cho từng component (`Navbar.css`)
+- Breakpoint dùng chung: 480px / 768px / 1024px / 1280px
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Chạy dự án
+```bash
+npm install
+npm run dev
+```
