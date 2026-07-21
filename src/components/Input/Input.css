@@ -1,0 +1,30 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+.field__label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+.field__control {
+  padding: 10px 12px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-family: inherit;
+  transition: border-color var(--transition-fast);
+}
+.field__control:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+.field__control--error {
+  border-color: var(--color-danger);
+}
+.field__error {
+  font-size: 12px;
+  color: var(--color-danger);
+}
