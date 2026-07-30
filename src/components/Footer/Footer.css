@@ -1,0 +1,23 @@
+.footer { background: var(--color-navy); color: #cfd8e3; margin-top: 40px; }
+.footer__inner {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  gap: 32px;
+  padding: 40px 16px;
+}
+.footer__logo { display: flex; flex-direction: column; line-height: 1; font-weight: 900; }
+.footer__logo-sbs { font-size: 30px; color: #c9455a; letter-spacing: 2px; }
+.footer__logo-techs { font-size: 12px; color: #c9455a; letter-spacing: 4px; }
+.footer__col h4 { color: #fff; margin-bottom: 12px; font-size: 15px; }
+.footer__col p { margin: 6px 0; font-size: 13px; }
+.footer__col ul li { font-size: 13px; padding: 4px 0; color: #b8c2cf; }
+.footer__bottom {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding: 14px 16px;
+  font-size: 12px;
+  text-align: center;
+  color: #93a1b2;
+}
+@media (max-width: 768px) {
+  .footer__inner { grid-template-columns: 1fr; }
+}

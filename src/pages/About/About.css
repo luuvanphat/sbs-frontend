@@ -1,0 +1,29 @@
+.about-page__banner {
+  background: var(--color-primary);
+  color: #fff;
+  padding: 24px 16px;
+}
+.about-page__banner h1 { margin: 0 0 4px; font-size: 22px; }
+.about-page__banner p { margin: 0; font-size: 13px; opacity: 0.9; }
+
+.about-page__body { padding: 32px 16px; max-width: 900px; }
+.about-page__body h2 { color: var(--color-primary); }
+.about-page__slogan { font-weight: 700; color: var(--color-primary); }
+.about-page__list li {
+  padding: 6px 0 6px 20px;
+  position: relative;
+}
+.about-page__list li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+}
+
+/* Mobile-first breakpoints dùng chung: 480 / 768 / 1024 / 1280 */
+@media (min-width: 768px) {
+  .about-page__body { padding: 48px 16px; }
+}
+@media (min-width: 1024px) {
+  .about-page__banner { padding: 32px 16px; }
+}

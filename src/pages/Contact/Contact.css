@@ -1,0 +1,23 @@
+.contact-page__banner { background: var(--color-primary); color: #fff; padding: 24px 16px; }
+.contact-page__banner h1 { margin: 0; font-size: 22px; }
+
+.contact-page__body {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 32px;
+  padding: 24px 16px;
+}
+.contact-page__desc { color: var(--color-text-muted); font-size: 14px; margin-bottom: 20px; }
+.contact-page__success { color: var(--color-success); font-weight: 600; margin-top: 12px; }
+.contact-page__info {
+  background: var(--color-bg-soft);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  height: fit-content;
+}
+.contact-page__info h4 { color: var(--color-primary); margin-top: 0; }
+.contact-page__info p { font-size: 13px; margin: 8px 0; }
+
+@media (max-width: 767px) {
+  .contact-page__body { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,66 @@
+// Dữ liệu danh mục sản phẩm dùng chung cho Sidebar + MegaMenu (mock, thay bằng API sau)
+export const categories = [
+  'Thiết bị tự động hóa',
+  'Điều khiển chuyển động',
+  'Thiết bị trong dây chuyền sản xuất',
+  'Các Thiết Bị',
+  'Cleaning Products & System',
+  'Cảm biến/Công tắc - Bộ chuyển mạch - Sensors/ Switches',
+  'Euchner VietNam',
+  'Thiết bị truyền thông - Kết nối',
+  'Controller - Bộ điều khiển',
+  'Bei Sensors Vietnam',
+  'E+H Vietnam',
+  'Bently Nevada VietNam',
+  'Moxa Vietnam',
+  'Vaisala',
+  'Onicon',
+  'Meter',
+  'Balluff VietNam',
+  'Pump - Bơm',
+  'Temposonics VietNam',
+  'Encoders - Bộ mã hóa xung, bộ giải mã xung',
+  'ALLEN BRADLEY',
+  'Matsui',
+  'Actuator - Bộ truyền động',
+  'Wise VietNam',
+  'Fluke Process Instrument Vietnam',
+  'Leuze Vietnam',
+  'Thiết bị đo lường & Kiểm tra',
+  'Pora VietNam',
+  'Metrix',
+  'Vecow Vietnam',
+];
+
+export const megaMenuGroups = [
+  {
+    title: 'Điều khiển chuyển động',
+    items: [
+      'CF3-D/-Disp – Rotronic Vietnam',
+      'CP11 ROTRONIC',
+      'CF5-W/-Disp Rotronic',
+      'CO2 DISPLAY ROTRONIC',
+      'HC2-P05 Rotronic',
+      'HC2-AW',
+    ],
+  },
+  {
+    title: 'Pilz',
+    items: [
+      'PSEN in1p',
+      'PSEN 1.1b-20/PSEN 1.1-20/8mm/10m/1unit',
+      'PSEN 1.2p-22/PSEN 1.2-20/8mm/ix1/1unit',
+      'PLID d1',
+      'PSEN rs2.0-175',
+    ],
+  },
+  {
+    title: 'Allen Bradley',
+    items: [
+      '2080-L50E-24QBB',
+      'Module 1756-ENBT',
+      'Module 1756-RM2',
+      'Soft Starter 150-C37NBD',
+    ],
+  },
+];
