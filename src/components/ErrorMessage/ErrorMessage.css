@@ -1,0 +1,6 @@
+.error-box {
+  text-align: center;
+  padding: 60px 16px;
+  color: var(--color-danger);
+}
+.error-box p { margin-bottom: 16px; font-size: 14px; }
