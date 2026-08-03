@@ -4,7 +4,7 @@ import './Input.css';
  * Input dùng chung - hỗ trợ label và hiển thị lỗi - Tuần 3
  */
 function Input({ label, error, as = 'input', ...rest }) {
-  const Tag = as; // 'input' hoặc 'textarea'
+  const Tag = as; 
   return (
     <div className="field">
       {label && <label className="field__label">{label}</label>}

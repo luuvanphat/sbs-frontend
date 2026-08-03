@@ -2,7 +2,7 @@ import { categories } from '../../services/categories';
 import './Sidebar.css';
 
 /**
- * Sidebar: lọc sản phẩm theo danh mục ở trang Sản phẩm - Tuần 4/6
+ * Sidebar: lọc sản phẩm theo danh mục ở trang Sản phẩm - Tuần 4
  */
 function Sidebar({ activeCategory, onSelect }) {
   return (
