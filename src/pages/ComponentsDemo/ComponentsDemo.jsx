@@ -38,7 +38,7 @@ function ComponentsDemo() {
         <h2>Modal</h2>
         <Button onClick={() => setOpen(true)}>Mở Modal</Button>
         <Modal open={open} title="Modal demo" onClose={() => setOpen(false)}>
-          <p>Nội dung modal hiển thị bằng React Portal, đè lên trang.</p>
+       
         </Modal>
       </section>
     </div>

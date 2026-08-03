@@ -3,7 +3,7 @@ import logo from '../../assets/logo.png';
 import './Footer.css';
 
 /**
- * Footer: thông tin công ty, liên kết nhanh, danh mục sản phẩm - Tuần 4
+ * Footer: thông tin công ty - Tuần 4
  */
 function Footer() {
   return (
