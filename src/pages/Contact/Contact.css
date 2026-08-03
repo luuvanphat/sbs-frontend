@@ -21,3 +21,4 @@
 @media (max-width: 767px) {
   .contact-page__body { grid-template-columns: 1fr; }
 }
+.contact-page__error { color: var(--color-danger); font-weight: 600; margin-top: 12px; }
