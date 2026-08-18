@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import MegaMenu from '../MegaMenu/MegaMenu';
 import { contactInfo } from '../../services/contactInfo';
 import './Navbar.css';
+import logo from '../../assets/logo.png';
 
 /**
  * Navbar: thanh hotline/email phía trên, logo, menu chính, ô tìm kiếm - Tuần 4
@@ -23,8 +24,7 @@ function Navbar() {
       <div className="navbar__main">
         <div className="container navbar__main-inner">
           <NavLink to="/" className="navbar__logo">
-            <span className="navbar__logo-sbs">SBS</span>
-            <span className="navbar__logo-techs">TECHS</span>
+            <img src={logo} alt="SBS Techs" className="navbar__logo-img" />
           </NavLink>
 
           <nav className="navbar__menu">
