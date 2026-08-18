@@ -1,4 +1,3 @@
-// Dữ liệu mẫu (mock data) sản phẩm - Tuần 6
 export const products = [
   {
     id: 1,
@@ -10,30 +9,84 @@ export const products = [
     id: 2,
     name: 'PSEN in1p',
     category: 'Điều khiển chuyển động',
-    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=400',
+    image: 'https://images.unsplash.com/photo-1535378917042-10a22c95931a?w=400',
   },
   {
     id: 3,
     name: 'PSEN 1.1b-20/PSEN 1.1-20/8mm/10m/1unit',
     category: 'Điều khiển chuyển động',
-    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=400',
+    image: 'https://images.unsplash.com/photo-1565608438257-fac3c27beb36?w=400',
   },
   {
     id: 4,
     name: 'CF3-D/-Disp – Rotronic Vietnam',
     category: 'Điều khiển chuyển động',
-    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=400',
+    image: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=400',
   },
   {
     id: 5,
     name: 'Module 1756-ENBT',
     category: 'ALLEN BRADLEY',
-    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=400',
+    image: 'https://images.unsplash.com/photo-1555664424-778a1e5e1b48?w=400',
   },
   {
     id: 6,
     name: 'Encoder H38D-1800-ABZC-28V/5-SC-UL',
     category: 'Encoders - Bộ mã hóa xung, bộ giải mã xung',
-    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=400',
+    image: 'https://images.unsplash.com/photo-1597852074816-d933c7d2b988?w=400',
+  },
+  {
+    id: 7,
+    name: 'PLC CompactLogix 5380',
+    category: 'ALLEN BRADLEY',
+    image: 'https://images.unsplash.com/photo-1591238372338-22d30c883a86?w=400',
+  },
+  {
+    id: 8,
+    name: 'Cảm biến quang điện PSENopt',
+    category: 'Cảm biến',
+    image: 'https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?w=400',
+  },
+  {
+    id: 9,
+    name: 'Biến tần PowerFlex 525',
+    category: 'Điều khiển động cơ',
+    image: 'https://images.unsplash.com/photo-1581092335397-9583eb92d232?w=400',
+  },
+  {
+    id: 10,
+    name: 'Bộ nguồn công nghiệp 24VDC',
+    category: 'Nguồn điện',
+    image: 'https://images.unsplash.com/photo-1603732551658-5fabbafa84eb?w=400',
+  },
+  {
+    id: 11,
+    name: 'Relay trung gian công nghiệp',
+    category: 'Thiết bị điều khiển',
+    image: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=400',
+  },
+  {
+    id: 12,
+    name: 'Encoder vòng quay E40S',
+    category: 'Encoders - Bộ mã hóa xung, bộ giải mã xung',
+    image: 'https://images.unsplash.com/photo-1563770660941-20978e870e26?w=400',
+  },
+  {
+    id: 13,
+    name: 'Màn hình HMI công nghiệp',
+    category: 'HMI',
+    image: 'https://images.unsplash.com/photo-1591238372338-22d30c883a86?w=400',
+  },
+  {
+    id: 14,
+    name: 'Bộ điều khiển nhiệt độ',
+    category: 'Điều khiển nhiệt độ',
+    image: 'https://images.unsplash.com/photo-1581092335397-9583eb92d232?w=400',
+  },
+  {
+    id: 15,
+    name: 'Cảm biến tiệm cận công nghiệp',
+    category: 'Cảm biến',
+    image: 'https://images.unsplash.com/photo-1581092335397-9583eb92d232?w=400',
   },
 ];
