@@ -4,6 +4,7 @@ import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import Products from './pages/Products/Products';
 import Contact from './pages/Contact/Contact';
+import Terms from './pages/Terms/Terms';
 import ComponentsDemo from './pages/ComponentsDemo/ComponentsDemo';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Route path="/gioi-thieu" element={<About />} />
         <Route path="/san-pham" element={<Products />} />
         <Route path="/lien-he" element={<Contact />} />
+        <Route path="/dieu-khoan-dich-vu" element={<Terms />} />
         <Route path="/demo-components" element={<ComponentsDemo />} />
       </Route>
     </Routes>
