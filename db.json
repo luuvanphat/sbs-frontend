@@ -1,93 +1,475 @@
 {
   "categories": [
-    { "id": 1, "name": "ALLEN BRADLEY" },
-    { "id": 2, "name": "Điều khiển chuyển động" },
-    { "id": 3, "name": "Encoders - Bộ mã hóa xung, bộ giải mã xung" },
-    { "id": 4, "name": "Euchner VietNam" },
-    { "id": 5, "name": "E+H Vietnam" },
-    { "id": 6, "name": "Bently Nevada VietNam" }
+    {
+      "id": "1",
+      "name": "ALLEN BRADLEY"
+    },
+    {
+      "id": "2",
+      "name": "Điều khiển chuyển động"
+    },
+    {
+      "id": "3",
+      "name": "Encoders - Bộ mã hóa xung, bộ giải mã xung"
+    },
+    {
+      "id": "4",
+      "name": "Euchner VietNam"
+    },
+    {
+      "id": "5",
+      "name": "E+H Vietnam"
+    },
+    {
+      "id": "6",
+      "name": "Bently Nevada VietNam"
+    },
+    {
+      "id": "7",
+      "name": "Cảm biến công nghiệp"
+    },
+    {
+      "id": "8",
+      "name": "Biến tần và động cơ"
+    },
+    {
+      "id": "9",
+      "name": "Thiết bị đo lường"
+    },
+    {
+      "id": "10",
+      "name": "Thiết bị điện công nghiệp"
+    }
   ],
   "products": [
     {
-      "id": 1,
-      "name": "2080-L50E-24QBB (Thay thế cho 2080-LC50-24QBB)",
+      "id": "1",
+      "name": "2080-L50E-24QBB (Micro850 PLC)",
       "category": "ALLEN BRADLEY",
       "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600",
       "brand": "Allen Bradley / Rockwell Automation",
       "origin": "Singapore",
-      "description": "Bộ điều khiển lập trình Micro850 thế hệ mới, tích hợp 24 cổng I/O (14 vào/10 ra), hỗ trợ EtherNet/IP, mở rộng tối đa 132 cổng I/O.",
+      "description": "Bộ điều khiển lập trình Micro850 dành cho hệ thống tự động hóa công nghiệp, hỗ trợ kết nối Ethernet và mở rộng I/O.",
       "specs": [
-        { "label": "Dòng sản phẩm", "value": "Micro850 PLC Family (Enhanced)" },
-        { "label": "Tổng số cổng I/O", "value": "24 điểm (14 DI / 10 DO)" },
-        { "label": "Giao tiếp", "value": "EtherNet/IP, USB 2.0, RS232/RS485" },
-        { "label": "Mở rộng", "value": "Tối đa 3 khe Plug-in + 4 thẻ Expansion I/O" }
+        {
+          "label": "Dòng sản phẩm",
+          "value": "Micro850 PLC Family"
+        },
+        {
+          "label": "Tổng số cổng I/O",
+          "value": "24 điểm"
+        },
+        {
+          "label": "Giao tiếp",
+          "value": "EtherNet/IP, USB, Serial"
+        },
+        {
+          "label": "Ứng dụng",
+          "value": "Điều khiển máy móc công nghiệp"
+        }
       ]
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "PSEN in1p",
       "category": "Điều khiển chuyển động",
-      "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600",
+      "image": "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600",
       "brand": "Pilz",
       "origin": "Germany",
-      "description": "Cảm biến an toàn dòng PSEN dùng trong hệ thống khóa liên động cửa bảo vệ máy.",
+      "description": "Thiết bị cảm biến an toàn hỗ trợ giám sát cửa bảo vệ máy và hệ thống khóa liên động.",
       "specs": [
-        { "label": "Hãng sản xuất", "value": "Pilz" },
-        { "label": "Ứng dụng", "value": "Khóa liên động an toàn" }
+        {
+          "label": "Hãng sản xuất",
+          "value": "Pilz"
+        },
+        {
+          "label": "Ứng dụng",
+          "value": "Khóa liên động an toàn"
+        },
+        {
+          "label": "Lĩnh vực",
+          "value": "Tự động hóa công nghiệp"
+        }
       ]
     },
     {
-      "id": 3,
-      "name": "PSEN 1.1b-20/PSEN 1.1-20/8mm/10m/1unit",
+      "id": "3",
+      "name": "PSEN 1.1b-20/PSEN 1.1-20",
       "category": "Điều khiển chuyển động",
-      "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600",
+      "image": "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=600",
       "brand": "Pilz",
       "origin": "Germany",
-      "description": "Cảm biến an toàn dạng cặp, khoảng cách phát hiện 8mm, dây cáp 10m.",
+      "description": "Cảm biến an toàn dùng để phát hiện vị trí và hỗ trợ bảo vệ khu vực vận hành máy móc.",
       "specs": [
-        { "label": "Khoảng cách phát hiện", "value": "8mm" },
-        { "label": "Chiều dài cáp", "value": "10m" }
+        {
+          "label": "Khoảng cách phát hiện",
+          "value": "8 mm (theo cấu hình)"
+        },
+        {
+          "label": "Chiều dài cáp",
+          "value": "10 m (theo phiên bản)"
+        },
+        {
+          "label": "Ứng dụng",
+          "value": "Giám sát vị trí cửa bảo vệ"
+        }
       ]
     },
     {
-      "id": 4,
-      "name": "CF3-D/-Disp – Rotronic Vietnam",
+      "id": "4",
+      "name": "CF3-D/-Disp",
       "category": "Điều khiển chuyển động",
-      "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600",
+      "image": "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=600",
       "brand": "Rotronic",
       "origin": "Switzerland",
-      "description": "Thiết bị đo nhiệt độ, độ ẩm công nghiệp có màn hình hiển thị.",
+      "description": "Thiết bị đo nhiệt độ và độ ẩm công nghiệp tích hợp màn hình hiển thị, phục vụ giám sát môi trường.",
       "specs": [
-        { "label": "Hãng sản xuất", "value": "Rotronic" },
-        { "label": "Loại", "value": "Cảm biến nhiệt độ/độ ẩm" }
+        {
+          "label": "Hãng sản xuất",
+          "value": "Rotronic"
+        },
+        {
+          "label": "Đại lượng đo",
+          "value": "Nhiệt độ và độ ẩm"
+        },
+        {
+          "label": "Hiển thị",
+          "value": "Màn hình tích hợp"
+        }
       ]
     },
     {
-      "id": 5,
-      "name": "Module 1756-ENBT",
+      "id": "5",
+      "name": "1756-ENBT ControlLogix Ethernet Module",
       "category": "ALLEN BRADLEY",
-      "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600",
+      "image": "https://images.unsplash.com/photo-1581092162384-8987c1d64718?w=600",
       "brand": "Allen Bradley",
       "origin": "USA",
-      "description": "Module truyền thông Ethernet cho hệ ControlLogix.",
+      "description": "Module truyền thông Ethernet dành cho hệ thống điều khiển ControlLogix.",
       "specs": [
-        { "label": "Dòng sản phẩm", "value": "ControlLogix" },
-        { "label": "Giao tiếp", "value": "Ethernet/IP" }
+        {
+          "label": "Dòng sản phẩm",
+          "value": "ControlLogix"
+        },
+        {
+          "label": "Giao tiếp",
+          "value": "EtherNet/IP"
+        },
+        {
+          "label": "Ứng dụng",
+          "value": "Kết nối PLC và mạng công nghiệp"
+        }
       ]
     },
     {
-      "id": 6,
-      "name": "Encoder H38D-1800-ABZC-28V/5-SC-UL",
+      "id": "6",
+      "name": "H38D-1800-ABZC-28V/5-SC-UL",
       "category": "Encoders - Bộ mã hóa xung, bộ giải mã xung",
-      "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600",
+      "image": "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=600",
       "brand": "BEI Sensors",
       "origin": "USA",
-      "description": "Bộ mã hóa xung tương đối (incremental encoder), độ phân giải 1800 xung/vòng.",
+      "description": "Bộ mã hóa xung tương đối dùng để đo tốc độ quay và vị trí trong các hệ thống điều khiển chuyển động.",
       "specs": [
-        { "label": "Độ phân giải", "value": "1800 PPR" },
-        { "label": "Điện áp", "value": "5-28V" }
+        {
+          "label": "Độ phân giải",
+          "value": "1800 PPR (theo model)"
+        },
+        {
+          "label": "Điện áp",
+          "value": "5–28 V (theo phiên bản)"
+        },
+        {
+          "label": "Loại",
+          "value": "Incremental Encoder"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Guard Locking Device CET",
+      "category": "Euchner VietNam",
+      "image": "https://images.unsplash.com/photo-1581092335878-2d9ff86ca2bf?w=600",
+      "brand": "Euchner",
+      "origin": "Germany",
+      "description": "Thiết bị khóa an toàn cửa bảo vệ máy, hỗ trợ kiểm soát truy cập vào khu vực nguy hiểm.",
+      "specs": [
+        {
+          "label": "Nhà sản xuất",
+          "value": "Euchner"
+        },
+        {
+          "label": "Chức năng",
+          "value": "Khóa cửa an toàn"
+        },
+        {
+          "label": "Ứng dụng",
+          "value": "Dây chuyền sản xuất tự động"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Proline Promag W 400",
+      "category": "E+H Vietnam",
+      "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600",
+      "brand": "Endress+Hauser",
+      "origin": "Switzerland",
+      "description": "Thiết bị đo lưu lượng điện từ dùng cho hệ thống quản lý và giám sát chất lỏng công nghiệp.",
+      "specs": [
+        {
+          "label": "Nguyên lý đo",
+          "value": "Điện từ"
+        },
+        {
+          "label": "Đại lượng đo",
+          "value": "Lưu lượng thể tích"
+        },
+        {
+          "label": "Ứng dụng",
+          "value": "Hệ thống đường ống công nghiệp"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "3300 XL Proximity Transducer",
+      "category": "Bently Nevada VietNam",
+      "image": "https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=600",
+      "brand": "Bently Nevada",
+      "origin": "USA",
+      "description": "Cảm biến tiệm cận phục vụ theo dõi vị trí trục và giám sát rung động máy móc quay.",
+      "specs": [
+        {
+          "label": "Loại cảm biến",
+          "value": "Proximity Transducer"
+        },
+        {
+          "label": "Ứng dụng",
+          "value": "Giám sát máy quay"
+        },
+        {
+          "label": "Hệ thống",
+          "value": "Condition Monitoring"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "name": "E3Z-D61 Photoelectric Sensor",
+      "category": "Cảm biến công nghiệp",
+      "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600",
+      "brand": "Omron",
+      "origin": "Japan",
+      "description": "Cảm biến quang điện dùng để phát hiện vật thể trên băng tải và trong dây chuyền tự động hóa.",
+      "specs": [
+        {
+          "label": "Loại thiết bị",
+          "value": "Photoelectric Sensor"
+        },
+        {
+          "label": "Phương pháp phát hiện",
+          "value": "Quang điện"
+        },
+        {
+          "label": "Ứng dụng",
+          "value": "Đếm và phát hiện vật thể"
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "name": "IFM Inductive Proximity Sensor",
+      "category": "Cảm biến công nghiệp",
+      "image": "https://images.unsplash.com/photo-1581092162384-8987c1d64718?w=600",
+      "brand": "IFM",
+      "origin": "Germany",
+      "description": "Cảm biến tiệm cận cảm ứng dùng để phát hiện vật thể kim loại mà không cần tiếp xúc trực tiếp.",
+      "specs": [
+        {
+          "label": "Nguyên lý",
+          "value": "Cảm ứng điện từ"
+        },
+        {
+          "label": "Đối tượng phát hiện",
+          "value": "Vật thể kim loại"
+        },
+        {
+          "label": "Ứng dụng",
+          "value": "Tự động hóa máy móc"
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "name": "SINAMICS V20 Variable Frequency Drive",
+      "category": "Biến tần và động cơ",
+      "image": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600",
+      "brand": "Siemens",
+      "origin": "Germany",
+      "description": "Biến tần điều khiển tốc độ động cơ không đồng bộ trong các ứng dụng bơm, quạt và băng tải.",
+      "specs": [
+        {
+          "label": "Dòng sản phẩm",
+          "value": "SINAMICS V20"
+        },
+        {
+          "label": "Chức năng",
+          "value": "Điều chỉnh tốc độ động cơ"
+        },
+        {
+          "label": "Ứng dụng",
+          "value": "Bơm, quạt, băng tải"
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "name": "Delta MS300 Compact Drive",
+      "category": "Biến tần và động cơ",
+      "image": "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600",
+      "brand": "Delta Electronics",
+      "origin": "Taiwan",
+      "description": "Biến tần nhỏ gọn phục vụ điều khiển động cơ trong máy đóng gói và dây chuyền sản xuất.",
+      "specs": [
+        {
+          "label": "Dòng sản phẩm",
+          "value": "MS300"
+        },
+        {
+          "label": "Chức năng",
+          "value": "Điều khiển tốc độ và mô-men"
+        },
+        {
+          "label": "Ứng dụng",
+          "value": "Máy móc công nghiệp"
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "name": "Pressure Transmitter Cerabar",
+      "category": "Thiết bị đo lường",
+      "image": "https://images.unsplash.com/photo-1581092335878-2d9ff86ca2bf?w=600",
+      "brand": "Endress+Hauser",
+      "origin": "Switzerland",
+      "description": "Bộ truyền áp suất công nghiệp sử dụng để giám sát áp suất trong hệ thống đường ống và bồn chứa.",
+      "specs": [
+        {
+          "label": "Đại lượng đo",
+          "value": "Áp suất"
+        },
+        {
+          "label": "Tín hiệu đầu ra",
+          "value": "Tùy phiên bản"
+        },
+        {
+          "label": "Ứng dụng",
+          "value": "Quy trình công nghiệp"
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "name": "Digital Temperature Controller",
+      "category": "Thiết bị đo lường",
+      "image": "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600",
+      "brand": "Autonics",
+      "origin": "South Korea",
+      "description": "Bộ điều khiển nhiệt độ kỹ thuật số dùng để theo dõi và điều chỉnh nhiệt độ trong thiết bị sản xuất.",
+      "specs": [
+        {
+          "label": "Chức năng",
+          "value": "Điều khiển nhiệt độ"
+        },
+        {
+          "label": "Hiển thị",
+          "value": "LED kỹ thuật số"
+        },
+        {
+          "label": "Ứng dụng",
+          "value": "Lò nhiệt và máy gia công"
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "name": "Modular Circuit Breaker",
+      "category": "Thiết bị điện công nghiệp",
+      "image": "https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=600",
+      "brand": "Schneider Electric",
+      "origin": "France",
+      "description": "Thiết bị đóng cắt và bảo vệ mạch điện trước các tình trạng quá tải và ngắn mạch.",
+      "specs": [
+        {
+          "label": "Loại thiết bị",
+          "value": "Circuit Breaker"
+        },
+        {
+          "label": "Chức năng",
+          "value": "Bảo vệ mạch điện"
+        },
+        {
+          "label": "Ứng dụng",
+          "value": "Tủ điện công nghiệp"
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "name": "Industrial Switching Power Supply",
+      "category": "Thiết bị điện công nghiệp",
+      "image": "https://images.unsplash.com/photo-1591488320449-011701bb6704?w=600",
+      "brand": "Mean Well",
+      "origin": "Taiwan",
+      "description": "Bộ nguồn chuyển mạch cung cấp điện áp DC ổn định cho PLC, cảm biến và thiết bị điều khiển.",
+      "specs": [
+        {
+          "label": "Loại thiết bị",
+          "value": "Switching Power Supply"
+        },
+        {
+          "label": "Đầu ra",
+          "value": "Tùy phiên bản"
+        },
+        {
+          "label": "Ứng dụng",
+          "value": "Tủ điều khiển tự động"
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "name": "Rotary Incremental Encoder",
+      "category": "Encoders - Bộ mã hóa xung, bộ giải mã xung",
+      "image": "https://images.unsplash.com/photo-1581092162384-8987c1d64718?w=600",
+      "brand": "Autonics",
+      "origin": "South Korea",
+      "description": "Bộ mã hóa xung quay dùng để phản hồi tốc độ và vị trí trong hệ thống điều khiển chuyển động.",
+      "specs": [
+        {
+          "label": "Loại",
+          "value": "Incremental Encoder"
+        },
+        {
+          "label": "Tín hiệu đầu ra",
+          "value": "A/B hoặc A/B/Z tùy model"
+        },
+        {
+          "label": "Ứng dụng",
+          "value": "Động cơ và băng tải"
+        }
       ]
     }
   ],
-  "contacts": []
+  "contacts": [
+    {
+      "name": "bb",
+      "email": "912.luuvanphat24@gmail.com",
+      "phone": "0987654321",
+      "message": "1234",
+      "createdAt": "2026-09-29T13:31:56.140Z",
+      "id": "7XC8T2QqWkc"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

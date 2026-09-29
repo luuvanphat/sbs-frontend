@@ -1,27 +1,37 @@
 import { NavLink } from 'react-router-dom';
 import Button from '../../components/Button/Button';
-import banner from '../../assets/banner.jpg';
+import SEO from '../../components/SEO/SEO';
+import bannerWebp from '../../assets/banner.webp';
+import bannerJpg from '../../assets/banner.jpg';
 import './Home.css';
 
+/**
+ * Trang chủ - Tuần 2/5
+ * Ảnh banner tối ưu hiệu năng: dùng <picture> để trình duyệt ưu tiên tải WebP
+ * (nhẹ hơn ~85% so với JPG gốc), fallback JPG cho trình duyệt cũ - Tuần 11
+ */
 function Home() {
   return (
-    <div className="home-hero"
-    style={{ backgroundImage: `url(${banner})` }}  >
-      <div className="home-hero__overlay" /> 
-      <div className="container home-hero__inner">
-        <h1>CÔNG TY TNHH CÔNG NGHỆ MỚI SBS</h1>
-        <p>
-          Chúng tôi cung cấp đa dạng thiết bị điện, giải pháp điều khiển và tự động hóa cho nhiều ngành công nghiệp,
-           từ tư vấn kỹ thuật, lựa chọn thiết bị đến thay thế và chuyển đổi thiết bị tương đương, 
-           giúp tối ưu hiệu suất, chi phí và độ ổn định của hệ thống. <br /> <br />
-         <strong>SBS - Tư vấn đúng giải pháp | Cung cấp đúng thiết bị | Chuyển đổi đúng nhu cầu</strong>
-        </p>
-        <div className="home-hero__actions">
-          <NavLink to="/san-pham"><Button>Xem sản phẩm</Button></NavLink>
-          <NavLink to="/lien-he"><Button variant="outline">Liên hệ ngay</Button></NavLink>
+    <>
+      <SEO title="Trang chủ" description="Tư vấn, cung cấp và chuyển đổi thiết bị điện công nghiệp - SBS Techs." />
+      <div className="home-hero">
+        <picture className="home-hero__picture">
+          <source srcSet={bannerWebp} type="image/webp" />
+          <img src={bannerJpg} alt="" className="home-hero__bg" fetchpriority="high" />
+        </picture>
+        <div className="home-hero__overlay" />
+        <div className="container home-hero__inner">
+          <h1>CÔNG TY TNHH CÔNG NGHỆ MỚI SBS</h1>
+          <p>
+            Tư vấn đúng giải pháp | Cung cấp đúng thiết bị | Chuyển đổi đúng nhu cầu
+          </p>
+          <div className="home-hero__actions">
+            <NavLink to="/san-pham"><Button>Xem sản phẩm</Button></NavLink>
+            <NavLink to="/lien-he"><Button variant="outline">Liên hệ ngay</Button></NavLink>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

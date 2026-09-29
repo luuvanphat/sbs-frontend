@@ -1,0 +1,27 @@
+.contact-details {
+  display: grid;
+  gap: 8px;
+}
+
+.contact-details__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.contact-details__item svg {
+  flex: 0 0 16px;
+  margin-top: 1px;
+}
+
+.contact-details__item a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.contact-details__item a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,10 @@
+.terms-page__banner { background: var(--color-navy); color: #fff; padding: 24px 16px; }
+.terms-page__banner h1 { margin: 0; font-size: 22px; }
+.terms-page__body { padding: 24px 16px; max-width: 800px; }
+.terms-page__section { margin-bottom: 20px; }
+.terms-page__section h3 { color: var(--color-primary); margin-bottom: 6px; font-size: 16px; }
+.terms-page__section p { margin: 0; color: var(--color-text-muted); line-height: 1.6; font-size: 14px; }
+
+@media (min-width: 768px) {
+  .terms-page__body { padding: 40px 16px; }
+}
