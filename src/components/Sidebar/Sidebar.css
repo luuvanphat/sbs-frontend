@@ -11,17 +11,25 @@
   font-size: 14px;
   padding: 14px 16px;
 }
-.sidebar__list li {
+.sidebar__list li { border-bottom: 1px solid var(--color-border); }
+.sidebar__list button {
+  width: 100%;
+  text-align: left;
   padding: 10px 16px;
   font-size: 13px;
-  border-bottom: 1px solid var(--color-border);
+  background: none;
+  border: none;
+  border-left: 3px solid transparent;
   cursor: pointer;
+  font-family: inherit;
+  color: inherit;
   transition: background var(--transition-fast);
 }
-.sidebar__list li:hover { background: var(--color-bg-soft); }
-.sidebar__list li.is-active {
+.sidebar__list button:hover { background: var(--color-bg-soft); }
+.sidebar__list button:focus-visible { outline: 2px solid var(--color-primary); outline-offset: -2px; }
+.sidebar__list button.is-active {
   background: var(--color-bg-soft);
   color: var(--color-primary);
   font-weight: 700;
-  border-left: 3px solid var(--color-primary);
+  border-left-color: var(--color-primary);
 }

@@ -1,17 +1,26 @@
 import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import MegaMenu from '../MegaMenu/MegaMenu';
 import { contactInfo } from '../../services/contactInfo';
-import './Navbar.css';
 import logo from '../../assets/logo.png';
+import './Navbar.css';
 
 /**
  * Navbar: thanh hotline/email phía trên, logo, menu chính, ô tìm kiếm - Tuần 4
+ * Ô tìm kiếm điều hướng sang /san-pham?q=... - Tuần 9
  */
 function Navbar() {
   const [showMega, setShowMega] = useState(false);
+  const [keyword, setKeyword] = useState('');
+  const navigate = useNavigate();
 
   const navItem = ({ isActive }) => `navbar__link ${isActive ? 'is-active' : ''}`;
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+    if (!keyword.trim()) return;
+    navigate(`/san-pham?q=${encodeURIComponent(keyword.trim())}`);
+  };
 
   return (
     <header className="navbar">
@@ -41,8 +50,13 @@ function Navbar() {
             <NavLink to="/lien-he" className={navItem}>Liên hệ</NavLink>
           </nav>
 
-          <form className="navbar__search" onSubmit={(e) => e.preventDefault()}>
-            <input type="text" placeholder="Tìm kiếm..." />
+          <form className="navbar__search" onSubmit={handleSearch}>
+            <input
+              type="text"
+              placeholder="Tìm kiếm..."
+              value={keyword}
+              onChange={(e) => setKeyword(e.target.value)}
+            />
             <button type="submit" aria-label="Tìm kiếm">🔍</button>
           </form>
         </div>

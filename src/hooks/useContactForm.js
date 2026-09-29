@@ -1,7 +1,8 @@
 import { useState } from 'react';
+import { api } from '../services/api';
 
 /**
- * Hook quản lý state + validate cho form Liên hệ
+ * Hook quản lý state + validate + gửi API cho form Liên hệ - Tuần 7/8
  * - Họ tên: không được để trống
  * - Email: đúng định dạng
  * - Số điện thoại: đúng định dạng (VN, 9-11 số)
@@ -15,6 +16,8 @@ export function useContactForm() {
   const [values, setValues] = useState(initialState);
   const [errors, setErrors] = useState({});
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState(null);
 
   const handleChange = (field) => (e) => {
     setValues((v) => ({ ...v, [field]: e.target.value }));
@@ -37,16 +40,26 @@ export function useContactForm() {
     return Object.keys(next).length === 0;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const ok = validate();
-    setSubmitted(ok);
-    if (ok) {
-      // TODO: gọi API gửi thông tin liên hệ
-      console.log('Gửi liên hệ:', values);
+    setSubmitted(false);
+    setSubmitError(null);
+    if (!validate()) return false;
+
+    setSubmitting(true);
+    try {
+      await api.submitContact({ ...values, createdAt: new Date().toISOString() });
+      setSubmitted(true);
+      setValues(initialState);
+      return true;
+    } catch (err) {
+      console.error('Loi gui lien he:', err);
+      setSubmitError('Gửi liên hệ thất bại, vui lòng thử lại sau.');
+      return false;
+    } finally {
+      setSubmitting(false);
     }
-    return ok;
   };
 
-  return { values, errors, submitted, handleChange, handleSubmit };
+  return { values, errors, submitted, submitting, submitError, handleChange, handleSubmit };
 }

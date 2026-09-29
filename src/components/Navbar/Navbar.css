@@ -25,9 +25,15 @@
   line-height: 1;
   font-weight: 900;
 }
-.navbar__logo-img {
-  height: 44px;      
-  width: auto;
+.navbar__logo-sbs {
+  font-size: 26px;
+  color: var(--color-primary);
+  letter-spacing: 2px;
+}
+.navbar__logo-techs {
+  font-size: 11px;
+  color: var(--color-primary);
+  letter-spacing: 4px;
 }
 
 .navbar__menu {
@@ -77,3 +83,5 @@
 @media (max-width: 1024px) {
   .navbar__menu { display: none; }
 }
+
+.navbar__logo-img { height: 44px; width: auto; }

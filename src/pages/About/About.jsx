@@ -1,4 +1,5 @@
 import { contactInfo } from '../../services/contactInfo';
+import SEO from '../../components/SEO/SEO';
 import './About.css';
 
 /**
@@ -6,7 +7,9 @@ import './About.css';
  */
 function About() {
   return (
-    <div className="about-page">
+    <>
+      <SEO title="Giới thiệu" description="Thông tin về Công ty TNHH Công Nghệ Mới SBS." />
+      <div className="about-page">
       <div className="about-page__banner">
         <div className="container">
           <h1>Giới thiệu</h1>
@@ -37,7 +40,8 @@ function About() {
           <li>Tư vấn và triển khai dự án công nghiệp</li>
         </ul>
       </div>
-    </div>
+      </div>
+    </>
   );
 }
 

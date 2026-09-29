@@ -27,18 +27,19 @@ function ComponentsDemo() {
       <section className="demo-section">
         <h2>Input</h2>
         <Input
+          label="Họ tên"
           placeholder="Nhập họ tên..."
           value={value}
           onChange={(e) => setValue(e.target.value)}
         />
-        <Input placeholder="Nhập số điện thoại..." error="Số điện thoại không đúng định dạng" />
+        <Input label="Email" placeholder="Nhập email..." error="Email không đúng định dạng" />
       </section>
 
       <section className="demo-section">
         <h2>Modal</h2>
         <Button onClick={() => setOpen(true)}>Mở Modal</Button>
         <Modal open={open} title="Modal demo" onClose={() => setOpen(false)}>
-       
+          <p>Nội dung modal hiển thị bằng React Portal, đè lên trang.</p>
         </Modal>
       </section>
     </div>
