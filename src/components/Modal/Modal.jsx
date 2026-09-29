@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
+import { X } from 'lucide-react';
 import './Modal.css';
 
 /**
@@ -35,7 +36,7 @@ function Modal({ open, title, onClose, children }) {
         <div className="modal-box__header">
           <h3 id="modal-title">{title}</h3>
           <button className="modal-box__close" onClick={onClose} aria-label="Đóng hộp thoại">
-            ×
+            <X aria-hidden="true" size={18} />
           </button>
         </div>
         <div className="modal-box__body">{children}</div>

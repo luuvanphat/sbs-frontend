@@ -1,6 +1,8 @@
 import Input from '../../components/Input/Input';
 import Button from '../../components/Button/Button';
+import ContactDetails from '../../components/ContactDetails/ContactDetails';
 import SEO from '../../components/SEO/SEO';
+import { AlertCircle, CheckCircle2 } from 'lucide-react';
 import { contactInfo } from '../../services/contactInfo';
 import { useContactForm } from '../../hooks/useContactForm';
 import './Contact.css';
@@ -69,12 +71,14 @@ function Contact() {
             </Button>
             {submitted && (
               <p className="contact-page__success" role="status" aria-live="polite">
-                ✅ Gửi liên hệ thành công! Chúng tôi sẽ phản hồi sớm nhất.
+                <CheckCircle2 aria-hidden="true" size={16} />
+                Gửi liên hệ thành công! Chúng tôi sẽ phản hồi sớm nhất.
               </p>
             )}
             {submitError && (
               <p className="contact-page__error" role="alert">
-                ⚠️ {submitError}
+                <AlertCircle aria-hidden="true" size={16} />
+                {submitError}
               </p>
             )}
           </form>
@@ -82,9 +86,7 @@ function Contact() {
 
         <aside className="contact-page__info">
           <h4>{contactInfo.companyName}</h4>
-          <p>📍 {contactInfo.address}</p>
-          <p>✉️ {contactInfo.email}</p>
-          <p>☎️ {contactInfo.hotline} ({contactInfo.hotlineOwner})</p>
+          <ContactDetails contactInfo={contactInfo} />
         </aside>
       </div>
       </div>

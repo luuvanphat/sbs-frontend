@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Mail, Phone, Search } from 'lucide-react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import MegaMenu from '../MegaMenu/MegaMenu';
 import { contactInfo } from '../../services/contactInfo';
@@ -26,7 +27,14 @@ function Navbar() {
     <header className="navbar">
       <div className="navbar__topbar">
         <div className="container navbar__topbar-inner">
-          <span>HOTLINE {contactInfo.hotline} || EMAIL: {contactInfo.email.toUpperCase()}</span>
+          <a href={`tel:${contactInfo.hotline}`}>
+            <Phone aria-hidden="true" size={14} />
+            HOTLINE {contactInfo.hotline}
+          </a>
+          <a href={`mailto:${contactInfo.email}`}>
+            <Mail aria-hidden="true" size={14} />
+            EMAIL: {contactInfo.email.toUpperCase()}
+          </a>
         </div>
       </div>
 
@@ -57,7 +65,9 @@ function Navbar() {
               value={keyword}
               onChange={(e) => setKeyword(e.target.value)}
             />
-            <button type="submit" aria-label="Tìm kiếm">🔍</button>
+            <button type="submit" aria-label="Tìm kiếm">
+              <Search aria-hidden="true" size={18} />
+            </button>
           </form>
         </div>
       </div>

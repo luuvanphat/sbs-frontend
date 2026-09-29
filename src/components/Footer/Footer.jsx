@@ -1,5 +1,6 @@
 import { contactInfo } from '../../services/contactInfo';
 import { categories } from '../../services/categories';
+import ContactDetails from '../ContactDetails/ContactDetails';
 import logo from '../../assets/logo.png';
 import './Footer.css';
 
@@ -16,9 +17,7 @@ function Footer() {
 
         <div className="footer__col">
           <h4>{contactInfo.companyName}</h4>
-          <p>📍 {contactInfo.address}</p>
-          <p>✉️ {contactInfo.email}</p>
-          <p>☎️ {contactInfo.hotline} ({contactInfo.hotlineOwner})</p>
+          <ContactDetails contactInfo={contactInfo} />
         </div>
 
         <div className="footer__col">
