@@ -46,12 +46,3 @@ npm run preview
 - `develop`: nhánh tích hợp
 - `feature/*`: mỗi nhánh ứng với 1 tuần phát triển (xem lịch sử commit)
 
-| Nhánh | Nội dung |
-|---|---|
-| feature/setup-project | Khởi tạo dự án (Tuần 1) |
-| feature/router-structure | Cấu trúc thư mục, routing (Tuần 2) |
-| feature/ui-components | Button, Input, Modal (Tuần 3) |
-| feature/navbar-footer-sidebar | Navbar, MegaMenu, Footer, Sidebar (Tuần 4) |
-| feature/responsive-pages | Trang Giới thiệu, Điều khoản (Tuần 5) |
-| feature/products-contact-page | Trang Sản phẩm, Liên hệ (Tuần 6) |
-| feature/animation-validation | Hiệu ứng động, validate form (Tuần 7) |
