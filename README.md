@@ -79,8 +79,6 @@ npm run lint
 - `develop`: nhánh tích hợp
 - `feature/*`: mỗi nhánh ứng với 1 giai đoạn phát triển — xem chi tiết trong `CHANGELOG.md`
 
-<<<<<<< HEAD
-=======
 ## Hướng dẫn triển khai (Deploy)
 Dự án là SPA (Single Page Application) thuần frontend, có thể deploy miễn phí lên **Vercel** hoặc **Netlify**:
 
@@ -104,4 +102,4 @@ Dự án là SPA (Single Page Application) thuần frontend, có thể deploy mi
 ## Tác giả
 Lưu Văn Phát – Thực tập sinh Frontend
 Người hướng dẫn: anh Lê Công Việt
->>>>>>> develop
+
