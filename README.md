@@ -99,7 +99,4 @@ Dự án là SPA (Single Page Application) thuần frontend, có thể deploy mi
 - Viết unit test cho `useContactForm`, `useFetch`.
 - Tích hợp Google Analytics / Search Console sau khi có domain thật.
 
-## Tác giả
-Lưu Văn Phát – Thực tập sinh Frontend
-Người hướng dẫn: anh Lê Công Việt
 
